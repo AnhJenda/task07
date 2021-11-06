@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Empty Cells</title>
+		<style type="text/css">
+			td {
+				border: 1px solid #0088dd;
+				padding: 15px;
+			}
+			/*thuộc tính empty-cells quyết định xem có hiển thị hay không hiển thị đường viền của một cột rỗng trong table
+			giá trị show là có hiển thị (bảng 1) và giá trị hide là không hiển thị (bảng 2) */
+			table.one {
+				empty-cells: show;
+			}
+			table.two {
+				empty-cells: hide;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="one">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="two">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>
